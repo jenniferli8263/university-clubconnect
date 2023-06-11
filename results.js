@@ -35,7 +35,10 @@ document.addEventListener('DOMContentLoaded', function() {
     clubTitle.textContent = topThreeClubs[2];
     paragraph = document.getElementById('result3');
     paragraph.textContent = desc[topThreeClubs[2]];
-
+    
+    var chr = document.getElementById('character');
+    console.log(topThreeClubs[3]);
+    chr.src = desc[topThreeClubs[3]]+'.jpg';
   });
 
 

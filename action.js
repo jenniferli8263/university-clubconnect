@@ -5,6 +5,8 @@ var clubDescriptions = {
 }
 let topThreeClubs = [];
 
+var character;
+
 var artClubs = ["Acappella Club", "Former Films Creator Club", "Crafts 4 Charity", "Breakdancing", "Zine Club"];
 
 var artClubsCount = [0, 0, 0, 0, 0];
@@ -74,18 +76,22 @@ function actionQuiz(Event){
         for(let i = 0; i < 5; i++){
             artClubsCount[i] += 100;
         }
+        character = 'art';
+
     }
 
     if(rec.checked==true){
         for(let i = 0; i < 5; i++){
             recClubsCount[i] += 100;
         }
+        character = 'rec';
     }
 
     if(acad.checked==true){
         for(let i = 0; i < 5; i++){
             acadClubsCount[i] += 100;
         }
+        character = 'acad';
     }
 
     for(let i = 1; i < 15; i++){
@@ -146,10 +152,10 @@ function actionQuiz(Event){
     var indexedNumbers = allNum.map((value, index) => ({ value, index }));
     indexedNumbers.sort((a, b) => b.value - a.value);
     var topThreeIndices = indexedNumbers.slice(0, 3).map(obj => obj.index);
-    console.log(topThreeIndices);
+    console.log(character)
 
-    topThreeClubs = [allClubs[topThreeIndices[0]],allClubs[topThreeIndices[1]],allClubs[topThreeIndices[2]]];
-    console.log(topThreeClubs)
+    topThreeClubs = [allClubs[topThreeIndices[0]],allClubs[topThreeIndices[1]],allClubs[topThreeIndices[2]], character];
+    console.log('hi',topThreeClubs)
 setTimeout(() => {
     localStorage.setItem('result', JSON.stringify(topThreeClubs));
   }, 10000);
