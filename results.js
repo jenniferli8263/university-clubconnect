@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     var chr = document.getElementById('character');
     console.log(topThreeClubs[3]);
-    chr.src = '/characters'+desc[topThreeClubs[3]]+'.jpg';
+    chr.src = '/imgs/characters/'+topThreeClubs[3]+'.jpg';
   });
 
 
