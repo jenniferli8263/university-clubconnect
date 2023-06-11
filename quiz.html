@@ -11,21 +11,32 @@
       rel="stylesheet"
     />
     <script src="action.js"></script>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display:ital,wght@1,800&family=Roboto+Mono:wght@700&family=Roboto:wght@100;700&display=swap"
+    rel="stylesheet"/>  
   </head>
   <body>
-    <div id="box1">Personality Clubfinder</div>
+    <div id="box1">Club Compatibility Test</div>
     <br />
     <form>
       <div class="questions">
-        <h3>Select your options:</h3>
+        <h3>Select all categories that you're interested in:</h3>
         <br />
-        <input type="checkbox" name="option" value="option1" id="arts" />
-        Arts<br />
-        <input type="checkbox" name="option" value="option2" id="rec" />
-        Recreational<br />
         <input type="checkbox" name="option" value="option3" id="acad" />
-        Academic<br />
+        Academic
+        <!--non-functional options-->
+        <input type="checkbox" name="option" value="option4" id="business" />
+        Business and Entrepreneurial
+        <input type="checkbox" name="option" value="option"5 id="charity" />
+        Charitable, Community Service, and International Development
+        <input type="checkbox" name="option" value="option1" id="arts" />
+        Creative Arts, Dance, and Music
+        <input type="checkbox" name="option" value="option2" id="rec" />
+        Games, Recreational, and Social
+        
         <br />
+        <h3>Please choose the answer that best fits you:</h3>
+        <br>
         <label for="q1options"
           >I want to spend a lot of time on club activities.</label
         >
@@ -280,7 +291,7 @@
       <div id="q14">
         <!--radio buttons-->
 
-        <label for="q14options"> I like busy and loud environments </label>
+        <label for="q14options"> I like one-on-one coaching </label>
         <br />
 
         Disagree
@@ -296,9 +307,11 @@
       </div>
       <br />
 
-      <button type="submit" id="submit" onclick="location.href='results.html'">
+      <div class="button-div">
+        <button type="submit" id="submit" onclick="location.href='results.html'">
         Submit
-      </button>
+      </button></div>
+      
     </form>
   </body>
 </html>

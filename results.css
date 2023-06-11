@@ -1,0 +1,67 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #f1f5ff;
+    color:black;
+    font-family: Roboto, Helvetica, sans-serif;
+  }
+  
+  body {
+    background-color:white; 
+    text-align: center;
+  
+  }
+  
+  h2 {
+    font-family: 'Geologica', sans-serif;
+    text-align: top;
+    color: #24305E;
+    
+  }
+  
+  h3 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-radius: 11px;
+    text-align: center;
+    padding: 12px;
+    background-color: #cbe6f5;
+    color: #24305E;
+    width: 90%;
+    margin: 0 auto; /* Center the h3 horizontally */ 
+  }
+  
+  p {
+    color:#24305E;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+    width: 70%;
+    margin-left: 150px;
+  }
+
+  
+  nav {
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    display: inline;
+  }
+
+  #character{
+    height:300px;
+    width: 300px;
+    
+  }
+
+  #charType{
+    margin-top: -20px;
+  }
+
+  

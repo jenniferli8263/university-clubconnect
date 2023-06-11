@@ -1,15 +1,15 @@
 var desc = {
-  "Acappella Club": "The UW A Cappella Club is the umbrella club of all a cappella groups at the University of Waterloo! UWACC was founded in 2008 originally with one ensemble and has since expanded to include many different groups including the AcaBellas, the Unaccompanied Minors, ACE, the Musical InterDudes, the Water Boys, and In Full Colour. ",
+  "Acappella Club": "The UW A Cappella Club is the umbrella club of all a cappella groups at the University of Waterloo! UWACC was founded in 2008 originally with one ensemble and has since expanded to include many different groups including the AcaBellas, the Unaccompanied Minors, ACE, the Musical InterDudes, the Water Boys, and In Full Colour. \n https://instagram.com/uwacc ",
   "Former Films Creator Club": "The film making center at the University of Waterloo.",
-  "Crafts 4 Charity":"We are a UW DIY campus club that seeks to spark creativity. Every term we host a couple of workshops teaching you how to make cute plushies, polymer clay charms, and more- we will provide the materials and instructions, all levels are welcome! ",
-  "Breakdancing": " The UW Breakers promotes hip hop culture and break dancing as a fun and exciting activity for students and others as a form of self-expression and as an opportunity to get to know one another. The club mainly hosts a weekly open practice that is open to all levels of dancers to learn and practice breaking",
-  "Zine Club":"Waterloo Zine Club (aka WAT Is Zine?) is a club dedicated to showcasing the creativity of the UW student body. We put out monthly issues that feature artwork, poetry, articles and more from UW students exclusively! ",
+  "Crafts 4 Charity":"We are a UW DIY campus club that seeks to spark creativity. Every term we host a couple of workshops teaching you how to make cute plushies, polymer clay charms, and more- we will provide the materials and instructions, all levels are welcome! \n https://www.instagram.com/uw.crafts4charity",
+  "Breakdancing": " The UW Breakers promotes hip hop culture and break dancing as a fun and exciting activity for students and others as a form of self-expression and as an opportunity to get to know one another. The club mainly hosts a weekly open practice that is open to all levels of dancers to learn and practice breaking \nhttps://discord.gg/Pu7vMNfHX4",
+  "Zine Club":"Waterloo Zine Club (aka WAT Is Zine?) is a club dedicated to showcasing the creativity of the UW student body. We put out monthly issues that feature artwork, poetry, articles and more from UW students exclusively! \nwatiszine@clubs.wusa.ca",
   "Chess Club":"We wish to provide an environment where people throughout the Kitchener-Waterloo Region can enjoy the game and share their love for chess through discussions and strong tournaments for all levels. ",
   "University of Waterloo Raising the Roof Club":"University of Waterloo’s Raising the Roof club is partnered with the Raising the Roof non-profit organization, whose mission is to provide national leadership on solutions to homelessness.",
-  "Improv Club":"UW Improv meets every week for games, exercises, sports and warfare from the world of *improvisational drama*, made famous by Whose Line is it Anyway. Our objectives are fun, enjoyment and belly laughs-- no experience necessary, drop-ins welcome!",
-  "Intramural Sports":"insert description here8",
-  "Cooking Club":"The Cooking Club serves up cooking classes, bake sales, barbeques, and other food related adventures. We cover the full spectrum of foods from fancy sushi rolling classes to quick and dirty tips to help you manage the necessary evil known as ‘cooking during midterms’.",
-  "Debate Society":" Our purpose is to hone our skills for competitive debate, within the CUSID (Canadian University Society for Intercollegiate Debate) and beyond.",
+  "Improv Club":"UW Improv meets every week for games, exercises, sports and warfare from the world of *improvisational drama*, made famous by Whose Line is it Anyway. Our objectives are fun, enjoyment and belly laughs-- no experience necessary, drop-ins welcome! Please contact uwimprovisation@gmail.com if you have any questions",
+  "Intramural Sports":"Intramural sports are a great way to play sports recreationally. Form teams with your friends and compete with others in a tournament style bracket to determine the winner!",
+  "Cooking Club":"The Cooking Club serves up cooking classes, bake sales, barbeques, and other food related adventures. We cover the full spectrum of foods from fancy sushi rolling classes to quick and dirty tips to help you manage the necessary evil known as ‘cooking during midterms’. The current official email used is: uwcookingclub.exec@gmail.com We also have an instagram: https://www.instagram.com/uwcookingclub/ ",
+  "Debate Society":" Our purpose is to hone our skills for competitive debate, within the CUSID (Canadian University Society for Intercollegiate Debate) and beyond. \nhttps://discord.gg/DzuuZRsK ",
   "Tech+ UW":"Tech+ UW's mission is to cultivate a more inclusive and diverse tech community at UWaterloo by making resources more accessible to the community and students in need. ",
   "Moot Court":"The University of Waterloo Moot Court is a club for students interested in building their verbal advocacy skills, knowledge of critical legal issues, and presentation abilities in the courtroom. ",
   "Ace Chapter":"DECA is an international student organization that joins college and university students together to engage in business related activities.",
@@ -39,6 +39,19 @@ document.addEventListener('DOMContentLoaded', function() {
     var chr = document.getElementById('character');
     console.log(topThreeClubs[3]);
     chr.src = 'imgs/characters/'+topThreeClubs[3]+'.jpg';
+
+    var charTitle = document.getElementById('charType');
+    var tmpTxt = '';
+    if(topThreeClubs[3] === 'art'){
+      tmpTxt = "The Creator";
+    }
+    else if(topThreeClubs[3] === 'rec'){
+      tmpTxt = "The Explorer";
+    }
+    else if(topThreeClubs[3] === 'acad'){
+      tmpTxt = "The Philosopher";
+    }
+    charTitle.textContent = tmpTxt;
   });
 
 

@@ -16,19 +16,45 @@ body{
     border: 2px solid;
     border-radius: 8px;
     color:#374780;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-left:7px;
+    padding-bottom: 25px;
+    padding-left:15px;
     padding-right:7px;
     font-size: 20px;
     background: #ffffff;
     font-family: Roboto;
 }
+.button-div {
+    background-color: #f1f5ff;
+    /* color: #1e86ee; */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    display: flex; justify-content: center; align-items: center;
+    
+  }
+
+#quizButton{
+    background-color:#7bb1e7;
+    box-shadow: 0px 4px 10px #2f5479;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: bold;
+    
+    width: 200px;
+    height: 50px;
+
+}
+    
 #clubName {
     font-family: Roboto;
     color:#374780;
     font-size: 30px;
     text-align: center;
+}
+#box1 {
+    font-family: Roboto Mono;
+    
 }
 h1{
     color:black;
