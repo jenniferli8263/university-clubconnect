@@ -5,7 +5,7 @@ var clubDescriptions = {
 }
 let topThreeClubs = [];
 
-var character;
+var character = "";
 
 var artClubs = ["Acappella Club", "Former Films Creator Club", "Crafts 4 Charity", "Breakdancing", "Zine Club"];
 
@@ -94,6 +94,7 @@ function actionQuiz(Event){
         character = 'acad';
     }
 
+
     for(let i = 1; i < 15; i++){
 
         var num = i+'';
@@ -146,7 +147,6 @@ function actionQuiz(Event){
                 console.log(acadClubsCount)
             }
         }
-    console.log("hi");
     var allNum = [...artClubsCount, ...recClubsCount, ...acadClubsCount];
     var allClubs = [...artClubs, ...recClubs, ...acadClubs];
     var indexedNumbers = allNum.map((value, index) => ({ value, index }));
@@ -155,7 +155,7 @@ function actionQuiz(Event){
     console.log(character)
 
     topThreeClubs = [allClubs[topThreeIndices[0]],allClubs[topThreeIndices[1]],allClubs[topThreeIndices[2]], character];
-    console.log('hi',topThreeClubs)
+    console.log(topThreeClubs)
 setTimeout(() => {
     localStorage.setItem('result', JSON.stringify(topThreeClubs));
   }, 10000);
