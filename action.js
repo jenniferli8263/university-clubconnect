@@ -3,7 +3,7 @@ var clubDescriptions = {
     "Acappella Club": "insert description here",
 
 }
-var topThreeClubs;
+let topThreeClubs = [];
 
 var artClubs = ["Acappella Club", "Former Films Creator Club", "Crafts 4 Charity", "Breakdancing", "Zine Club"];
 
@@ -88,10 +88,9 @@ function actionQuiz(Event){
         }
     }
 
-    for(let i = 49; i < 64; i++){
-    
-        var num = String.fromCharCode(i);
+    for(let i = 1; i < 15; i++){
 
+        var num = i+'';
         console.log(num)
         if(document.getElementById('q'+num+'_1').checked) {   
             Questions["Q"+num] = 1;
@@ -150,12 +149,14 @@ function actionQuiz(Event){
     console.log(topThreeIndices);
 
     topThreeClubs = [allClubs[topThreeIndices[0]],allClubs[topThreeIndices[1]],allClubs[topThreeIndices[2]]];
+    console.log(topThreeClubs)
+setTimeout(() => {
+    localStorage.setItem('result', JSON.stringify(topThreeClubs));
+  }, 10000);
     //combine the three things!
 }
 
-console.log(topThreeClubs)
-localStorage.setItem('result', topThreeClubs);
-window.location.href = "results.html";
+
     
 
 
