@@ -1,9 +1,34 @@
+.grid-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.column:nth-child(1) {
+  flex-basis: 30%; /* Adjust the width as needed */
+}
+
+.column:nth-child(2) {
+  flex-basis: 40%; /* Adjust the width as needed */
+}
+
+.column:nth-child(3) {
+  flex-basis: 30%; /* Adjust the width as needed */
+}
+
+.column {
+  flex: 1;
+  background-color: #f1f5ff;
+  width: 10px;
+
+}
+
 html, body {
   height: 100%;
   width: 100%;
   background-color: #f1f5ff;
   color:black;
   font-family: Roboto, Helvetica, sans-serif;
+  font-size: 20 px;
 }
 
 #box1 {
@@ -20,19 +45,12 @@ body {
 
 }
 
-h1 {
-  font-family: 'Geologica', sans-serif;
-  text-align: top;
-  color: #24305E;
-  
-}
-
 h3 {
   font-family: roboto, sans-serif;
   border-radius: 11px;
   text-align: center;
   padding: 12px;
-  background-color: #24305E;
+  background-color:#841f1f;
   color: white;
   width: 90%;
   margin: 0 auto; /* Center the h3 horizontally */
@@ -79,6 +97,11 @@ button-div {
   width: 120px;
   height: 50px;
 
+}
+
+#clubNiches {
+  font-size: 30 px;
+  font-family: Roboto;
 }
 
 nav {
