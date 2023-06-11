@@ -154,12 +154,12 @@ function actionQuiz(Event){
     var topThreeIndices = indexedNumbers.slice(0, 3).map(obj => obj.index);
     console.log(character)
 
-    topThreeClubs = [allClubs[topThreeIndices[0]],allClubs[topThreeIndices[1]],allClubs[topThreeIndices[2]], character];
+    topThreeClubs = [allClubs[topThreeIndices[0]],allClubs[topThreeIndices[1]], allClubs[topThreeIndices[2]],character];
     console.log(topThreeClubs)
-setTimeout(() => {
     localStorage.setItem('result', JSON.stringify(topThreeClubs));
-  }, 10000);
     //combine the three things!
+    // Retrieve the existing item from local storage
+
 }
 
 
