@@ -1,0 +1,31 @@
+body{
+    background-color: #f1f5ff;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#title{
+    border-radius: 10px;
+    color:#374780;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    text-align: center;
+    font-family: Roboto Mono;
+}
+#blurb {
+    border: 2px solid;
+    border-radius: 8px;
+    color:#374780;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left:7px;
+    padding-right:7px;
+    font-size: 20px;
+    background: #ffffff;
+    font-family: Roboto;
+}
+h1{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
